@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">demoactivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="demo">
+        <item>Name</item>
+        <item>Hello</item>
+        <item>Abc</item>
+    </string-array>
+</resources>
