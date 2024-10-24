@@ -2,6 +2,7 @@ package com.example.demoactivity;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Gravity;
@@ -67,7 +68,13 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                showMessage("Hello abc");
-                showDialogConfirm();
+//                showDialogConfirm();
+                String message = "Check out this cool app!";
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_TEXT, message);
+                startActivity(Intent.createChooser(intent, "Share via"));
+
             }
         });
 

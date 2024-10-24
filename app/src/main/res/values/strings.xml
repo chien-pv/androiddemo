@@ -6,4 +6,10 @@
         <item>Hello</item>
         <item>Abc</item>
     </string-array>
+
+    <string-array name="demoSpinner">
+        <item>Học Tâp</item>
+        <item>Ăn Uống</item>
+        <item>Đi Lại</item>
+    </string-array>
 </resources>
